@@ -23,8 +23,7 @@
     "url": "https://github.com/jvitor83/types-autoinstaller.git"
   },
   "activationEvents": [
-    "workspaceContains:package.json",
-    "onCommand:types.installAllDependencies"
+    "workspaceContains:package.json"
   ],
   "main": "./out/src/extension",
   "contributes": {

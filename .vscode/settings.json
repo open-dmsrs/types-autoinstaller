@@ -7,5 +7,15 @@
 		"out": true // set this to false to include "out" folder in search results
 	},
 	"typescript.tsdk": "./node_modules/typescript/lib", // we want to use the TS server from our node_modules folder to control its version
-	"prettier.typescriptEnable": []
+	"prettier.typescriptEnable": [],
+	"emeraldwalk.runonsave": {
+		"commands": [
+			{
+				"match": "package.json",
+				"isAsync": true,
+				"cmd": "pnpx vscode-ext-gen"
+			}
+		]
+	},
+	"i18n-ally.localesPaths": []
 }
